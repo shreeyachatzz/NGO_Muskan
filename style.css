@@ -1,0 +1,283 @@
+
+:root {
+    --red: #ef233c;
+    --darkred: #c00424;
+    --platinum: #e5e5e5;
+    --black: #2b2d42;
+    --white: #fff;
+    --thumb: #edf2f4;
+  }
+/* ADDING CUSTOM SCROLL BAR */
+::-webkit-scrollbar{
+	width:6px;
+}
+::-webkit-scrollbar-thumb{
+	background: linear-gradient(transparent, rgb(0, 13, 255));
+	border-radius: 6px;
+}
+::webkit-scrollbar-thumb:hover{
+	background: linear-gradient(transparent, rgb(0, 255, 102));
+}
+/* END OF CUSTOM SCROLLBAR */
+
+.btndonate{
+    background-color: rgb(136, 44, 44);
+    color: white;
+    border-radius: 25px;
+    border: 4rem;
+    padding: 10px;
+}
+.navbar-toggler{
+    border-width: 0ch ;
+}
+.navbar-elements li{
+    list-style-type: none;
+}
+.container-fluid{
+    align-items: flex-end;
+}
+
+.banner{
+    position: relative;
+    background: url(./images/banner.jpg) no-repeat center;
+    background-size: cover;
+    height:500px;
+
+}
+.containerr{
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    text-align: center;
+    font-size: 28px;
+    justify-items: center;
+    justify-items: center;
+    padding-bottom: 10px;
+}
+
+.abHead{
+    font-weight: 700;
+    padding: 2rem;
+    font-size: 36px;
+}
+
+.abBody{
+    padding-bottom: 1rem;
+}
+
+.btnAbout{
+    display: inline-block;
+    background-color: grey;
+    color: white;
+    border-radius: 25px;
+    border: 1rem;
+    margin: 1rem;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: ease-in 0.1s;
+}
+
+.btnAbout:hover{
+    box-shadow: 4px 4px #3a3a3a;
+}
+  
+  .container.camp{
+    max-width: 99%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(160, 229, 206);
+  }
+
+  .container.camp img{
+    object-fit: cover;
+    height: 250px;
+    width: 95%;
+    padding-bottom: 20px;
+  }
+  
+ .container.camp h2 {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 1em;
+  }
+
+  .container.foot h2{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 1em;
+  }
+  
+  .cards {
+    display: flex;
+    padding: 25px 0px;
+    list-style: none;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 100%;
+    padding: 20px;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+    scroll-snap-align: start;
+    transition: all 0.2s;
+  }
+  
+  .card:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  .card:hover {
+    color: var(--white);
+    background: var(--red);
+  }
+  
+  .card .card-title {
+    font-size: 20px;
+  }
+  
+  .card .card-content {
+    margin: 20px 0;
+    max-width: 85%;
+  }
+  
+  .card .card-link-wrapper {
+    margin-top: auto;
+  }
+  
+  .card .card-link {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: var(--red);
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: background 0.2s;
+  }
+  
+  .card:hover .card-link {
+    background: var(--darkred);
+  }
+  
+  .cards::-webkit-scrollbar {
+    height: 12px;
+  }
+  
+  .cards::-webkit-scrollbar-thumb,
+  .cards::-webkit-scrollbar-track {
+    border-radius: 92px;
+  }
+  
+  .cards::-webkit-scrollbar-thumb {
+    background: var(--darkred);
+  }
+  
+  .cards::-webkit-scrollbar-track {
+    background: var(--thumb);
+  }
+  
+  @media (min-width: 500px) {
+    .card {
+      flex-basis: calc(50% - 10px);
+    }
+  
+    .card:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .card {
+      flex-basis: calc(calc(100% / 3) - 20px);
+    }
+  
+    .card:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .card {
+      flex-basis: calc(25% - 30px);
+    }
+  
+    .card:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+  .people{
+    padding: 100px;
+    display: block;
+    position: relative;
+    transition: ease-in;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .prev{
+    left: 0;
+    margin: 10px;
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    margin: 10px;
+  }
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  .peoplesay .quote{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 50px;
+  }
+  .peoplesay .name{
+    text-align: right;
+  }
+  .whatpeople{
+    text-align: center;
+  }
+  .sec{
+    display: none;
+    transition: ease-in 0.8s;
+  }
+
+  .container.foot h2{
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .foot{
+    background-color: #2b2d42;
+    color: white;
+    max-width: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  .contactus li{
+    list-style-type: none;
+  }
+  .impactfoot li{    
+    list-style-type: none;
+  }
