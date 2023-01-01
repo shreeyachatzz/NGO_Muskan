@@ -481,21 +481,21 @@
   }
   
 
-  @media (max-width: 800px) {
+  @media (max-width: 890px) {
     .ctrbase {
       grid-template-columns: 1fr 1fr;
       row-gap: 10vh;
     }
   }
 
-  @media (max-width: 380px) {
+  @media (max-width: 440px) {
     .ctrbase {
       grid-template-columns: 1fr;
       row-gap: 10vh;
     }
   }
 
-  @media (max-width: 215px) {
+  @media (max-width: 237px) {
     .ctrbase {
       grid-template-columns: 1fr;
       row-gap: 10vh;
