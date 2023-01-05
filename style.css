@@ -160,9 +160,8 @@
 }
   
   .container.camp{
-    max-width: 99%;
+    max-width: 100%;
     width: 100%;
-    border-radius: 10px;
     background-image: url(https://images.unsplash.com/photo-1421789665209-c9b2a435e3dc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8ZW52aXJvbm1lbnR8ZW58MHx8MHx8&w=1000&q=80);
     background-attachment: fixed;
   }
@@ -172,6 +171,7 @@
     height: 250px;
     width: 95%;
     padding-bottom: 20px;
+    max-width: 100%;
   }
   
  .container.camp h2 {
@@ -180,20 +180,32 @@
     font-size: 32px;
     margin-bottom: 1em;
     color: #fff;
+    max-width: 100%;
   }
 
   .container.foot h2{
+    width: 100%;
     padding-top: 30px;
     text-align: center;
     font-size: 32px;
     margin-bottom: 1em;
+    max-width: 100%;
   }
   @media (max-width: 380px) {
     .container.foot h2{
       font-size: 15px;
     }
+    .container {
+      max-width: 100%;
+    }
   }
-  
+
+  @media (min-width: 992px)
+  {
+    .container {
+      max-width: 100%;
+  }
+  }
   
   .cards {
     display: flex;
@@ -404,9 +416,9 @@
   .foot{
     background-color: #2b2d42;
     color: white;
-    max-width: 100%;
-    padding-left: 20%;
-    padding-right: 20%;
+    max-width: 100% !important;
+    padding-left: 20% !important;
+    padding-right: 20%!important;
   }
   
   .contactus li{
@@ -464,7 +476,8 @@
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 3em;
-    
+    padding-bottom: 3em;
+    padding-top: 3em;
   }
 
   .count{
@@ -593,7 +606,7 @@ figure{
 }
 @media (min-width: 1024px) {
   .card__caption {
-    top: calc(100% - 39px);
+    top: calc(100% - 32px);
     transform: unset;
   }
 }

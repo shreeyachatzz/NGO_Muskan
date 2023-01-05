@@ -1,93 +1,448 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="eventstyle.css">
-    <link rel="stylesheet" href="style.css">
-    <title>MUSKAN EVENTS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@300&display=swap"
+    rel="stylesheet">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="eventstyle.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="aboutstyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <title>MUSKAN EVENTS</title>
 </head>
+
 <body>
-    <!-- navbar begins -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
-        <div class="container-fluid">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a href="https://www.instagram.com/ngomuskan/" target="_blank"><i class="col-sm-1 bi bi-instagram" style="color:black ; padding: 1rem;"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://twitter.com/muskan_ngo " target="_blank"> <i class="col-sm-1 bi bi-twitter" style="color:black ;padding: 1rem;"></i></a>                       
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://www.facebook.com/ngomuskan-109759708004977  " target="_blank"><i class="col-sm-1 bi bi-facebook" style="color:black ;padding: 1rem;"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://www.linkedin.com/company/ngomuskan/" target="_blank"><i class="col-sm-1 bi bi-linkedin" style="color:black ;padding: 1rem;"></i></a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <i class="bi bi-envelope-fill" style="color:black"></i>
-                                <a href="mailto:muskan@gmail.com" style="color: black;">
-                                    muskan@gmail.com
-                                </a>                        
-                    </li>
-                    <li style="padding-left:1rem ;">
-                        <i class="bi bi-telephone-fill" style="color:black "></i>
-                        <a>+91-98702-21738</a>
-                        </li>
-                </ul>
-            
-        </div>
-    </nav>
-    <nav class="autohide navbar navbar-expand-lg navbar-light bg-lignt">
-        <div class="container-fluid">
-        <a href="/" class="navbar-brand">MUSKAN ORG</a>
-        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
-            <span class="navbar-toggler-icon my-toggler"></span>
-        </button>
-            <div class="navbar-collapse collapse" id="collapsingNavbar2">
-                <ul class="navbar-nav ml-auto">
-                    <li class="hover-underline-animation nav-item" ><a class="nav-link" style="color:black" href="index.html"> Home</a></li>
-                    <li class="hover-underline-animation nav-item" ><a class="nav-link" style="color:black" href="#"> About Us</a></li>
-                    <li class="hover-underline-animation nav-item"><a class="nav-link" style="color:black" href="#"> Menstrual Health </a></li>
-                    <li class="hover-underline-animation nav-item dropdown">
-                        <button class="dropbtn">Muskan Impacts</button>
-                        <div class="dropdown-content">
-                            <a class="hover-underline-animation" href="#">Health Care</a>
-                            <a class="hover-underline-animation" href="#">Food Charity</a>
-                            <a class="hover-underline-animation" href="#">Environment Restoration</a>                          
-                            <a class="hover-underline-animation" href="#">Animal Welfare</a>
-                            <a class="hover-underline-animation" href="#">Old Age Care</a>
-                        </div>
-                        </li>
-                    <li class="hover-underline-animation nav-item"><a class="nav-link" style="color:black" href="events.html"> Events </a></li>
-                    <li class="hover-underline-animation nav-item"><a class="nav-link" style="color:black" href="#"> Volunteering </a></li>
-                    <li> <button type="button" class="btn btndonate" >Donate</button></li> 
-                </ul>
+  <!-- navbar begins -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a href="https://www.instagram.com/ngomuskan/" target="_blank"><i class="col-sm-1 bi bi-instagram"
+                style="color:black ; padding: 1rem;"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="https://twitter.com/muskan_ngo " target="_blank"> <i class="col-sm-1 bi bi-twitter"
+                style="color:black ;padding: 1rem;"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.facebook.com/ngomuskan-109759708004977  " target="_blank"><i
+                class="col-sm-1 bi bi-facebook" style="color:black ;padding: 1rem;"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.linkedin.com/company/ngomuskan/" target="_blank"><i class="col-sm-1 bi bi-linkedin"
+                style="color:black ;padding: 1rem;"></i></a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <i class="bi bi-envelope-fill" style="color:black"></i>
+            <a href="mailto:muskan@gmail.com" style="color: black;">
+              muskan@gmail.com
+            </a>
+          </li>
+          <li style="padding-left:1rem ;">
+            <i class="bi bi-telephone-fill" style="color:black "></i>
+            <a>+91-98702-21738</a>
+          </li>
+        </ul>
+
+      </div>
+  </nav>
+  <nav class="autohide navbar navbar-expand-lg navbar-light bg-lignt">
+    <div class="container-fluid">
+      <a href="/" class="navbar-brand">MUSKAN ORG</a>
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+        <span class="navbar-toggler-icon my-toggler"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="collapsingNavbar2">
+        <ul class="navbar-nav ml-auto">
+          <li class="hover-underline-animation nav-item"><a class="nav-link" style="color:black" href="index.html">
+              Home</a></li>
+          <li class="hover-underline-animation nav-item"><a class="nav-link" style="color:black" href="#">
+              About Us</a></li>
+          <li class="hover-underline-animation nav-item"><a class="nav-link" style="color:black" href="#">
+              Menstrual Health </a></li>
+          <li class="hover-underline-animation nav-item dropdown">
+            <button class="dropbtn">Muskan Impacts</button>
+            <div class="dropdown-content">
+              <a class="hover-underline-animation" href="#">Health Care</a>
+              <a class="hover-underline-animation" href="#">Food Charity</a>
+              <a class="hover-underline-animation" href="#">Environment Restoration</a>
+              <a class="hover-underline-animation" href="#">Animal Welfare</a>
+              <a class="hover-underline-animation" href="#">Old Age Care</a>
             </div>
+          </li>
+          <li class="hover-underline-animation nav-item"><a class="nav-link" style="color:black" href="events.html">
+              Events </a></li>
+          <li class="hover-underline-animation nav-item"><a class="nav-link" style="color:black" href="#">
+              Volunteering </a></li>
+          <li> <button type="button" class="btn btndonate">Donate</button></li>
+        </ul>
+      </div>
+    </div>
+
+  </nav>
+  <!-- end of navbar -->
+
+  <!-- ABOUT US SECTION -->
+  <div class="abtus">
+    <div class="abttext">
+      <div class="abtuss">ABOUT US</div>
+      <div class="abthead">Helping businesses succeed through the power of video.</div>
+      <div class="abtdesc">Video is the future of business in this digital-focused world. Vidyard uses video to
+        change the way companies connect and communicate. We help organizations of all sizes humanize their
+        communications and personalize their customer experiences.</div>
+    </div>
+    <img src="images/main-image.png.webp" alt="">
+  </div>
+  <!-- ABOUT US SECTION END -->
+
+  <!-- VISION/MISSION -->
+  <div class="vismis">
+    <div class="aim">
+      <div class="aimhead">
+        AIM
+      </div>
+      <div class="aimdesc">
+        The idea of Vidhi came about in 2009-10 when India was caught up in the controversy around the Indo-US
+        nuclear liability bill. We were a group of graduate students who felt that there was room for
+        significant improvement in the bill and sent in an unsolicited report to the standing committee of the
+        Parliament. Many of our suggestions were accepted by the standing committee and the Government of India
+        and are the law of the land.
+      </div>
+    </div>
+  </div>
+  <!-- VISION/MISSION END -->
+  <!-- PEOPLE -->
+  <div class="ppll">
+    <div class="pplhead">OUR TEAM</div>
+    <div class="profiless">
+      <div class="profile-cards">
+
+        <div class="card card-1">
+
+          <img
+            src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260">
+
+          <div class="card-details">
+
+            <h3 class="card-details-title">Kailey Nance</h3>
+
+            <div class="card-details-social">
+
+              <ul>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-twitter"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                    </svg></a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-instagram"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                    </svg></a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-linkedin"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                    </svg></a></li>
+              </ul>
+
+            </div>
+
+          </div>
+
         </div>
-        
-    </nav>
-    <!-- end of navbar -->
+
+        <div class="card card-2">
+
+          <img
+            src="https://images.pexels.com/photos/598917/pexels-photo-598917.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260">
+
+          <div class="card-details">
+
+            <h3 class="card-details-title">Vincent Kingston</h3>
+
+            <div class="card-details-social">
+
+              <ul>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-twitter"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                    </svg></a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-instagram"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                    </svg></a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-linkedin"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                    </svg></a></li>
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="card card-3">
+
+          <img
+            src="https://images.pexels.com/photos/4814633/pexels-photo-4814633.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260">
+
+          <div class="card-details">
+
+            <h3 class="card-details-title">Evalyn Stephany</h3>
+
+            <div class="card-details-social">
+
+              <ul>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-twitter"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                    </svg></a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-instagram"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                    </svg></a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-linkedin"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                    </svg></a></li>
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <pre>
+
+    </pre>
+    <div class="profiless">
+      <div class="profile-cards">
+
+        <div class="card card-1">
+
+          <img
+            src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260">
+
+          <div class="card-details">
+
+            <h3 class="card-details-title">Kailey Nance</h3>
+
+            <div class="card-details-social">
+
+              <ul>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-twitter"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                    </svg></a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-instagram"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                    </svg></a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-linkedin"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                    </svg></a></li>
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="card card-2">
+
+          <img
+            src="https://images.pexels.com/photos/598917/pexels-photo-598917.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260">
+
+          <div class="card-details">
+
+            <h3 class="card-details-title">Vincent Kingston</h3>
+
+            <div class="card-details-social">
+
+              <ul>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-twitter"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                    </svg></a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-instagram"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                    </svg></a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-linkedin"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                    </svg></a></li>
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="card card-3">
+
+          <img
+            src="https://images.pexels.com/photos/4814633/pexels-photo-4814633.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260">
+
+          <div class="card-details">
+
+            <h3 class="card-details-title">Evalyn Stephany</h3>
+
+            <div class="card-details-social">
+
+              <ul>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-twitter"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                    </svg></a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-instagram"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                    </svg></a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-linkedin"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                    </svg></a></li>
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <!-- PEOPLE END -->
+
+  <!-- MORE INFO -->
+
+<div class="info-card">
+	<div class="infoc">
+		<figure class="card__thumb">
+			<img src="https://insidearabia.com/wp-content/uploads/2020/05/IMG_2393.jpg" alt="picture of a person giving grains to children" class="card__image">
+			<figcaption class="card__caption">
+				<h2 class="card__title">SUPPORT US</h2>
+				<p class="card__snippet">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus temporibus quam sit ea aut, eveniet modi accusantium reprehenderit sequi? Quis pariatur error esse, ut doloremque quo nulla veritatis quam repellendus!</p>
+				<a href="" class="card__button">DONATE</a>
+			</figcaption>
+		</figure>
+	</div>
+
+	<div class="infoc">
+		<figure class="card__thumb">
+			<img src="https://web-static.wrike.com/blog/content/uploads/2017/01/PREVIEW-collaborative-problem-solving.jpg?av=86d39549b8e0f40a8c9dec8e6ec5280f" alt="People working together on a table" class="card__image">
+			<figcaption class="card__caption">
+				<h2 class="card__title">JOIN US</h2>
+				<p class="card__snippet">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ullam inventore eaque fugiat, rerum vel soluta beatae numquam dolor magnam, explicabo assumenda itaque voluptates nulla nihil maiores minus neque blanditiis!</p>
+				<a href="" class="card__button">JOIN</a>
+			</figcaption>
+		</figure>
+	</div>
+</div>
+
+
+<!-- footer -->
+
+<div class="container foot">
+  <div class="row">
+      <div class="col-sm">
+          <div class="aboutuss"><h2>About Us</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla odit, corporis tenetur dolorem, atque placeat soluta id qui eum dicta, nesciunt et praesentium tempore quibusdam? Maxime eos impedit minima nobis?</p>
+          </div>
+          <div class="donateus">
+              <h2>DONATE</h2>
+          </div>
+      </div>
+      <div class="col-sm impactfoot">
+          <div class="impactfoot">
+              <h2>Muskan Impact</h2>
+          <ul>
+              <li>
+                  Health Care
+              </li>
+              <li>
+                  Food Charity
+              </li>
+              <li>Environment Restoration</li>
+              <li>Animal Welfare</li>
+              <li>Old Age Care</li>
+          </ul>
+          </div>
+          <div class="contactus">
+              <h2>Contact Us</h2>
+              <ul>
+                  <li><b>Address : </b>Sarkar Heritage B Wing 1st Floor,Kane Road Bandra West, Mumbai 400050</li>
+                  <p></p>
+                  <li><b>Phone : </b>022 20861134/ 35/36</li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- footer -->
+<!-- rights -->
+<p class="rights">© 2021 NGO MUSKAN</p>
+<!-- rights -->
 
 
 
 
-    
-    
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

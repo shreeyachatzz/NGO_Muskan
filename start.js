@@ -37,3 +37,4 @@ valueDisplays.forEach((valueDisplay) => {
     }
   }, duration);
 });
+
