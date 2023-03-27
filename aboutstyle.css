@@ -219,3 +219,8 @@
     font-family: 'Poppins', sans-serif;
     padding-bottom: 1em;
   }
+
+  .pos{
+    visibility: visible;
+    color: black;
+  }
