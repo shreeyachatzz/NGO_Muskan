@@ -129,6 +129,8 @@
 }
 
 .abBody{
+    padding-left: 1rem;
+    padding-right: 1rem;
     padding-bottom: 1rem;
 }
 @media (max-width: 380px) {
@@ -309,7 +311,9 @@
       margin-right: 40px;
     }
   }
+
   .people{
+    background-color: rgb(255, 246, 241);
     padding: 100px;
     display: block;
     position: relative;
