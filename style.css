@@ -686,3 +686,10 @@ figure{
     font-size: 15px ;
   }
 }
+
+.logoimg{
+  height:5rem;
+  justify-content: center;
+  align-items: center;
+
+}
